@@ -15,10 +15,9 @@ def tensor_to_img(x:torch.Tensor,save=True,path="output"):
         row = line = int(sqrt(x_shape[0]))
     x = x.cpu().detach().numpy()
     _, axs = plt.subplots(row,line,figsize=(line, row),sharey=True,sharex=True)
-    
     if line == 1:
-        axs[0, 0].imshow(x,cmap='gray')
-        axs[0, 0].axis('off')
+        axs.imshow(x[0][0],cmap='gray')
+        axs.axis('off')
     else:
         cnt = 0
         for i in range(row):
