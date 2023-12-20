@@ -1,4 +1,4 @@
-说明文档
+### 说明文档
 
     文件说明：
 
@@ -13,7 +13,7 @@
         weights文件夹 存放了预训练参数
         example文件夹 存放了我们训练时获得的一些图片信息
 
-AiGcMn接口说明
+### AiGcMn接口说明
     
     
     
@@ -30,7 +30,7 @@ AiGcMn接口说明
     """
 ```
 
-使用样例
+### 使用样例
 
 ```python
     from aigcmn import AiGcMn
@@ -39,3 +39,12 @@ AiGcMn接口说明
     label = torch.randint(low=0,high=10,size=(1,100)).squeeze()
     ai.generate(label)
 ```
+
+### 结果展示
+
+<div><center>
+<img src=example/1_after_all_optimize.png width=100% height=100% >
+<br>
+<strong><font face="仿宋" size=2>方法1生成的MNIST数字结果</font>
+</strong>
+</center></div>
